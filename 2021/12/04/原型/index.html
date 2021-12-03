@@ -15,12 +15,10 @@
 <meta property="og:site_name" content="OldSecond&#39;s Blog">
 <meta property="og:description" content="在声明了一个函数之后，会自动按照一定的规则创建一个对象，这个对象就叫做原型对象。这个函数中会有一个属性prototype，这个属性指向的就是这个函数对应的原型对象；原型对象中有一个属性constructor，这个属性指向的是这个函数。 使用构造函数创建对象1234function students() &amp;#123;&amp;#125;var stu &#x3D; new students(); 此时，stu就是那个">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://s4.ax1x.com/2021/12/04/od2hNT.png">
 <meta property="article:published_time" content="2021-12-03T16:00:00.000Z">
-<meta property="article:modified_time" content="2021-12-03T20:23:06.734Z">
+<meta property="article:modified_time" content="2021-12-03T20:32:51.558Z">
 <meta property="article:author" content="OldSecond">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://s4.ax1x.com/2021/12/04/od2hNT.png">
   
   
     <link rel="icon" href="/favicon.ico">
@@ -142,7 +140,7 @@
             <p>在声明了一个函数之后，会自动按照一定的规则创建一个对象，这个对象就叫做<strong>原型对象。</strong>这个函数中会有一个<strong>属性prototype</strong>，这个属性指向的就是这个函数对应的原型对象；原型对象中有一个<strong>属性constructor</strong>，这个属性指向的是这个函数。</p>
 <h2 id="使用构造函数创建对象"><a href="#使用构造函数创建对象" class="headerlink" title="使用构造函数创建对象"></a>使用构造函数创建对象</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">students</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> stu = <span class="keyword">new</span> students();</span><br></pre></td></tr></table></figure>
 <p>此时，stu就是那个构造函数students创建出来的对象，这个stu对象中是没有prototype属性的，prototype属性只在构造函数students中有。</p>
-<p><img src="https://s4.ax1x.com/2021/12/04/od2hNT.png" alt="od2hNT.png"></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(stu.prototype)</span><br><span class="line"><span class="comment">//输出 undefined</span></span><br><span class="line"><span class="built_in">console</span>.log(stu.__proto__)</span><br><span class="line"><span class="comment">//输出 &#123;constructor: ƒ&#125;</span></span><br></pre></td></tr></table></figure>
 <p>构造函数students中有prototype属性，指向的是students对应的原型对象；而stu是构造函数students创建出来的对象，不存在prototype属性，所以在调用prototype的时候的结果是undefined，但stu有一个__proto__属性，stu调用这个属性可以直接访问到构造函数students的原型对象（也就是说，stu的__proto__属性指向的是构造函数的原型对象）</p>
 <p>从上面可以看到，创建stu对象虽然使用的是students构造函数，但是对象创建出来之后，这个stu对象其实已经与students构造函数没有任何关系了，stu对象的__proto__属性指向的是students构造函数的原型对象。</p>
 <p>如果使用new students()创建多个对象stu1、stu2、stu3，则多个对象都会同时指向students构造函数的原型对象。</p>
@@ -159,7 +157,7 @@
 
             <div class="post-copyright">
     <div class="content">
-        <p>最后更新： 2021年12月04日 04:23</p>
+        <p>最后更新： 2021年12月04日 04:32</p>
         <p>原始链接： <a class="post-url" href="/2021/12/04/%E5%8E%9F%E5%9E%8B/" title="原型（prototype）">http://example.com/2021/12/04/%E5%8E%9F%E5%9E%8B/</a></p>
         <footer>
             <a href="http://example.com">
