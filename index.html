@@ -35,119 +35,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
-<!-- hexo injector head_end end --><meta name="generator" content="Hexo 5.4.0"><style>mjx-container[jax="SVG"] {
-  direction: ltr;
-}
-
-mjx-container[jax="SVG"] > svg {
-  overflow: visible;
-}
-
-mjx-container[jax="SVG"][display="true"] {
-  display: block;
-  text-align: center;
-  margin: 1em 0;
-}
-
-mjx-container[jax="SVG"][justify="left"] {
-  text-align: left;
-}
-
-mjx-container[jax="SVG"][justify="right"] {
-  text-align: right;
-}
-
-g[data-mml-node="merror"] > g {
-  fill: red;
-  stroke: red;
-}
-
-g[data-mml-node="merror"] > rect[data-background] {
-  fill: yellow;
-  stroke: none;
-}
-
-g[data-mml-node="mtable"] > line[data-line] {
-  stroke-width: 70px;
-  fill: none;
-}
-
-g[data-mml-node="mtable"] > rect[data-frame] {
-  stroke-width: 70px;
-  fill: none;
-}
-
-g[data-mml-node="mtable"] > .mjx-dashed {
-  stroke-dasharray: 140;
-}
-
-g[data-mml-node="mtable"] > .mjx-dotted {
-  stroke-linecap: round;
-  stroke-dasharray: 0,140;
-}
-
-g[data-mml-node="mtable"] > svg {
-  overflow: visible;
-}
-
-[jax="SVG"] mjx-tool {
-  display: inline-block;
-  position: relative;
-  width: 0;
-  height: 0;
-}
-
-[jax="SVG"] mjx-tool > mjx-tip {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-mjx-tool > mjx-tip {
-  display: inline-block;
-  padding: .2em;
-  border: 1px solid #888;
-  font-size: 70%;
-  background-color: #F8F8F8;
-  color: black;
-  box-shadow: 2px 2px 5px #AAAAAA;
-}
-
-g[data-mml-node="maction"][data-toggle] {
-  cursor: pointer;
-}
-
-mjx-status {
-  display: block;
-  position: fixed;
-  left: 1em;
-  bottom: 1em;
-  min-width: 25%;
-  padding: .2em .4em;
-  border: 1px solid #888;
-  font-size: 90%;
-  background-color: #F8F8F8;
-  color: black;
-}
-
-foreignObject[data-mjx-xml] {
-  font-family: initial;
-  line-height: normal;
-  overflow: visible;
-}
-
-.MathJax path {
-  stroke-width: 3;
-}
-
-mjx-container[display="true"] {
-  overflow: auto hidden;
-}
-
-mjx-container[display="true"] + br {
-  display: none;
-}
-</style></head>
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 5.4.0"></head>
 
 <body>
   <div id="container">
@@ -218,14 +106,14 @@ mjx-container[display="true"] + br {
       <div class="outer">
         <section id="main" class="body-wrap">
   
-    <article id="post-新生研讨课作业4" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-防抖和节流" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2021/12/21/%E6%96%B0%E7%94%9F%E7%A0%94%E8%AE%A8%E8%AF%BE%E4%BD%9C%E4%B8%9A4/"  >新生研讨课作业4</a>
+      <a class="article-title" href="/2022/04/02/%E9%98%B2%E6%8A%96%E5%92%8C%E8%8A%82%E6%B5%81/"  >防抖和节流</a>
     </h1>
   
 
@@ -235,15 +123,17 @@ mjx-container[display="true"] + br {
     <div class="article-entry " itemprop="articleBody">
       
         <div class="article-img">
-            <a href="/2021/12/21/%E6%96%B0%E7%94%9F%E7%A0%94%E8%AE%A8%E8%AF%BE%E4%BD%9C%E4%B8%9A4/" >
+            <a href="/2022/04/02/%E9%98%B2%E6%8A%96%E5%92%8C%E8%8A%82%E6%B5%81/" >
                 
-                <img src="http://example.com/images/banner.jpg" alt="新生研讨课作业4" title="新生研讨课作业4">
+                <img src="http://example.com/images/banner.jpg" alt="防抖和节流" title="防抖和节流">
                 
             </a>
         </div>
         <div class="article-feed">
             <p>
-                统计马丁·路德·金的《I have a dream》中，字母和单词的出现频率123456789#文章中各字母的出现次数open_file = open(&quot;I have a dream.txt&quot;)file = open_file.read()for abc in &quot;abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMN...
+                防抖在事件被触发n秒后再执行回调函数，如果在这n秒内又被触发，则重新计时。
+简单总结就是 延时执行 最后一次触发。
+ 用户多次频繁的触发某个事件，从第一次触发事件后开始计时，在未满足时间间隔时就进行了第二次触发，那么将第一次触发的事件清除 ，对第二次触发的事件重新开始计时；在未满足时间间隔时就进行了第三次触发，那么将第二次触发的事件清除，对第三次触发的事件重新开始计时，在...
             </p>
         </div>
       
@@ -253,63 +143,12 @@ mjx-container[display="true"] + br {
         
         <ul class="article-footer-menu">
             
-                <li><i class="fa fa-calendar"></i>2021-12-21</li>
+                <li><i class="fa fa-calendar"></i>2022-04-02</li>
             
             
         </ul>
         
-            <a href="/2021/12/21/%E6%96%B0%E7%94%9F%E7%A0%94%E8%AE%A8%E8%AF%BE%E4%BD%9C%E4%B8%9A4/#more" class="article-more-link" >more&gt;&gt;</a>
-        
-    </footer>
-  </div>
-</article>
-
-
-  
-    <article id="post-新生研讨课作业3" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/12/08/%E6%96%B0%E7%94%9F%E7%A0%94%E8%AE%A8%E8%AF%BE%E4%BD%9C%E4%B8%9A3/"  >新生研讨课作业3</a>
-    </h1>
-  
-
-          
-      </header>
-    
-    <div class="article-entry " itemprop="articleBody">
-      
-        <div class="article-img">
-            <a href="/2021/12/08/%E6%96%B0%E7%94%9F%E7%A0%94%E8%AE%A8%E8%AF%BE%E4%BD%9C%E4%B8%9A3/" >
-                
-                <img src="http://example.com/images/banner.jpg" alt="新生研讨课作业3" title="新生研讨课作业3">
-                
-            </a>
-        </div>
-        <div class="article-feed">
-            <p>
-                
-1234567time = 0coli = 20000while(time &lt; 360):    coli = coli*2    time += 20print(coli)# 5242880000
-当数量级过大时，可采用以下算法减少程序运行时间：
-123456789101112131415161718def fastPower(base, power):    ...
-            </p>
-        </div>
-      
-        
-    </div>
-    <footer class="article-footer">
-        
-        <ul class="article-footer-menu">
-            
-                <li><i class="fa fa-calendar"></i>2021-12-08</li>
-            
-            
-        </ul>
-        
-            <a href="/2021/12/08/%E6%96%B0%E7%94%9F%E7%A0%94%E8%AE%A8%E8%AF%BE%E4%BD%9C%E4%B8%9A3/#more" class="article-more-link" >more&gt;&gt;</a>
+            <a href="/2022/04/02/%E9%98%B2%E6%8A%96%E5%92%8C%E8%8A%82%E6%B5%81/#more" class="article-more-link" >more&gt;&gt;</a>
         
     </footer>
   </div>
@@ -366,107 +205,6 @@ mjx-container[display="true"] + br {
 
 
   
-    <article id="post-新生研讨课作业2" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/12/01/%E6%96%B0%E7%94%9F%E7%A0%94%E8%AE%A8%E8%AF%BE%E4%BD%9C%E4%B8%9A2/"  >新生研讨课作业2</a>
-    </h1>
-  
-
-          
-      </header>
-    
-    <div class="article-entry " itemprop="articleBody">
-      
-        <div class="article-img">
-            <a href="/2021/12/01/%E6%96%B0%E7%94%9F%E7%A0%94%E8%AE%A8%E8%AF%BE%E4%BD%9C%E4%B8%9A2/" >
-                
-                <img src="http://example.com/images/banner.jpg" alt="新生研讨课作业2" title="新生研讨课作业2">
-                
-            </a>
-        </div>
-        <div class="article-feed">
-            <p>
-                用流程图表示如下式子的计算过程
-S=1-\frac{1}{3}+\frac{1}{5}-\frac{1}{7}+\frac{1}{9}-\frac{1}{11}......+\frac{1}{197}-\frac{1}{199}
-
-
-            </p>
-        </div>
-      
-        
-    </div>
-    <footer class="article-footer">
-        
-        <ul class="article-footer-menu">
-            
-                <li><i class="fa fa-calendar"></i>2021-12-01</li>
-            
-            
-        </ul>
-        
-            <a href="/2021/12/01/%E6%96%B0%E7%94%9F%E7%A0%94%E8%AE%A8%E8%AF%BE%E4%BD%9C%E4%B8%9A2/#more" class="article-more-link" >more&gt;&gt;</a>
-        
-    </footer>
-  </div>
-</article>
-
-
-  
-    <article id="post-新生研讨课作业1" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/10/31/%E6%96%B0%E7%94%9F%E7%A0%94%E8%AE%A8%E8%AF%BE%E4%BD%9C%E4%B8%9A1/"  >新生研讨课作业</a>
-    </h1>
-  
-
-          
-      </header>
-    
-    <div class="article-entry " itemprop="articleBody">
-      
-        <div class="article-img">
-            <a href="/2021/10/31/%E6%96%B0%E7%94%9F%E7%A0%94%E8%AE%A8%E8%AF%BE%E4%BD%9C%E4%B8%9A1/" >
-                
-                <img src="http://example.com/images/banner.jpg" alt="新生研讨课作业" title="新生研讨课作业">
-                
-            </a>
-        </div>
-        <div class="article-feed">
-            <p>
-                互联网企业如何全面做到“遵纪守法”？近日，国家网信办公告称，网络安全审查办公室按照《网络安全审查办法》，对“运满满”“货车帮”“BOSS直聘”实施网络安全审查。这也是继滴滴出行后，最新被列入审查名单的互联网企业。
-
-从网信办的公告中可以看出，此次被列入审查名单的互联网企业，无不例外是因为“网络安全”问题，作为互联网企业，在面对日渐完善的法律法规监管之下，又应该如何做到“遵...
-            </p>
-        </div>
-      
-        
-    </div>
-    <footer class="article-footer">
-        
-        <ul class="article-footer-menu">
-            
-                <li><i class="fa fa-calendar"></i>2021-10-31</li>
-            
-            
-        </ul>
-        
-            <a href="/2021/10/31/%E6%96%B0%E7%94%9F%E7%A0%94%E8%AE%A8%E8%AF%BE%E4%BD%9C%E4%B8%9A1/#more" class="article-more-link" >more&gt;&gt;</a>
-        
-    </footer>
-  </div>
-</article>
-
-
-  
     <article id="post-块级格式化上下文" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -516,6 +254,44 @@ S=1-\frac{1}{3}+\frac{1}{5}-\frac{1}{7}+\frac{1}{9}-\frac{1}{11}......+\frac{1}{
 
 
   
+    <article id="post-Eloquent JavaScript" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    <div class="article-entry " itemprop="articleBody">
+      
+        <div class="article-img">
+            <a href="/1970/01/01/Eloquent%20JavaScript/" >
+                
+                <img src="http://example.com/images/banner.jpg" alt="" title="">
+                
+            </a>
+        </div>
+        <div class="article-feed">
+            <p>
+                Eloquent JavaScript第1章    值、类型和运算符第2章    程序结构第3章    函数3.1    定义一个函数使用以关键字function开头的表达式创建函数。函数有一组参数和一个函数体，其中包含调用函数时要执行的语句。以这种方式创建的函数的函数体必须用大括号括起来，即使它只包含一个语句。
+函数的返回值可以有，可以没有，没有则默认返回 undefi...
+            </p>
+        </div>
+      
+        
+    </div>
+    <footer class="article-footer">
+        
+        <ul class="article-footer-menu">
+            
+                <li><i class="fa fa-calendar"></i>1970-01-01</li>
+            
+            
+        </ul>
+        
+            <a href="/1970/01/01/Eloquent%20JavaScript/#more" class="article-more-link" >more&gt;&gt;</a>
+        
+    </footer>
+  </div>
+</article>
+
+
+  
 
 </section>
         
@@ -537,7 +313,7 @@ S=1-\frac{1}{3}+\frac{1}{5}-\frac{1}{7}+\frac{1}{9}-\frac{1}{11}......+\frac{1}{
       <p>
         Powered by  <a href="http://hexo.io/" target="_blank">Hexo</a>
         Theme <a href="//github.com/wongminho/hexo-theme-miho" target="_blank">MiHo</a>
-      &copy; 2021 OldSecond<br>
+      &copy; 2022 OldSecond<br>
       </p>
     </div>
   </div>
